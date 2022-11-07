@@ -22,8 +22,8 @@ class Altas extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
-            appBar: AppBar(
-                centerTitle: true, title: (const Text('MENU PRIjNCIPALl'))),
+            appBar:
+                AppBar(centerTitle: true, title: (const Text('MENU pNCIP'))),
             body: ListView.separated(
                 itemBuilder: (context, index) => ListTile(
                       title: Text(datos[index]),
