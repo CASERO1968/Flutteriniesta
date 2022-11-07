@@ -23,7 +23,7 @@ class Altas extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         home: Scaffold(
             appBar:
-                AppBar(centerTitle: true, title: (const Text('MENU PRINCIPALll'))),
+                AppBar(centerTitle: true, title: (const Text('MENU fain'))),
             body: ListView.separated(
                 itemBuilder: (context, index) => ListTile(
                       title: Text(datos[index]),
