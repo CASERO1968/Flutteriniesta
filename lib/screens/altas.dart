@@ -21,15 +21,28 @@ class Altas extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
+
             appBar: AppBar(
                 centerTitle: true, title: (const Text('MENU PRINCIPALl'))),
+
+            appBar:
+                AppBar(centerTitle: true, title: (const Text('MENU fain'))),
+
             body: ListView.separated(
                 itemBuilder: (context, index) => ListTile(
                       title: Text(datos[index]),
                       trailing: Icon(iconosright[index]),
                       leading: Icon(iconosleft[index]),
                       onTap: () {
+
                         Navigator.pushNamed(context, '/bajas');
+
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const Bajas(),
+                            ));
+
                       },
                     ),
                 separatorBuilder: (_, __) => const Divider(),
